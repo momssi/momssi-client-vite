@@ -30,7 +30,7 @@ jobs:
           find dist -type f | while read file; do
             mime=$(file --mime-type -b "$file")
             key=$(echo "$file" | sed 's|dist/||')
-            aws s3 cp "$file" "s3://momssi-app/app/$key" \
+            aws s3 cp "$file" "s3://momssi-app/$key" \
               --content-type "$mime"
           done
         env:
@@ -41,7 +41,7 @@ jobs:
         run: |
           aws cloudfront create-invalidation \
             --distribution-id ETZM8HOT38J5F \
-            --paths "/app/*"
+            --paths "/*"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
