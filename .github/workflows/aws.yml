@@ -24,17 +24,19 @@ jobs:
       - name: Build Vite App
         run: npm run build
 
-      - name: Upload with aws-actions/s3-sync
-        uses: aws-actions/s3-sync@v1
-        with:
-          bucket: momssi-app
-          region: ap-northeast-2
-          source-dir: dist
-          destination-dir: app
-          delete: true
+      - name: Upload to S3 with content-type detection
+        run: |
+          sudo apt-get update && sudo apt-get install -y file
+          find dist -type f | while read file; do
+            mime=$(file --mime-type -b "$file")
+            key=$(echo "$file" | sed 's|dist/||')
+            aws s3 cp "$file" "s3://momssi-app/app/$key" \
+              --content-type "$mime"
+          done
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ap-northeast-2
       - name: Invalidate CloudFront Cache
         run: |
           aws cloudfront create-invalidation \
