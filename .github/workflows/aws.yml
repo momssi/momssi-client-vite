@@ -24,15 +24,9 @@ jobs:
       - name: Build Vite App
         run: npm run build
 
-      - name: Upload to S3 with content-type detection
+      - name: Upload to S3
         run: |
-          sudo apt-get update && sudo apt-get install -y file
-          find dist -type f | while read file; do
-            mime=$(file --mime-type -b "$file")
-            key=$(echo "$file" | sed 's|dist/||')
-            aws s3 cp "$file" "s3://momssi-app/$key" \
-              --content-type "$mime"
-          done
+          aws s3 sync dist/ s3://momssi-app/ --delete
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
