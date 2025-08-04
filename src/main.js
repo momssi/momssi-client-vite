@@ -126,6 +126,31 @@ document.querySelector('#app').innerHTML = `
             </div>
           </div>
         </div>
+
+        <!-- Our Church Section -->
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">우리 교회</h3>
+          <div class="text-center">
+            <p class="text-gray-600 mb-2">등록한 교회가 없어요 😥</p>
+            <p class="text-sm text-gray-500 mb-4">다니는 교회의 멤버들을 만나보세요!</p>
+            <button class="bg-brown-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center mx-auto mb-3">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+              </svg>
+              등록하기
+            </button>
+            <p class="text-xs text-gray-400">우리 교회를 찾을 수 없어요</p>
+          </div>
+        </div>
+
+        <!-- Bible Verse Section -->
+        <div class="text-center py-6">
+          <div class="text-gray-700 leading-relaxed">
+            <p class="mb-2">그가 나를 푸른 초장에 누이시며</p>
+            <p class="mb-4">쉴만한 물가로 인도하시는도다</p>
+            <p class="text-sm text-gray-500">시편 23:2</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -133,7 +158,7 @@ document.querySelector('#app').innerHTML = `
     <div class="fixed bottom-0 left-0 right-0 bg-brown-800 text-white">
       <div class="max-w-md lg:max-w-4xl mx-auto">
         <div class="flex justify-around py-2">
-          <div class="flex flex-col items-center py-2 px-3 bg-brown-700 rounded-lg">
+          <div class="flex flex-col items-center py-2 px-3">
             <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
             </svg>
@@ -157,7 +182,7 @@ document.querySelector('#app').innerHTML = `
             </svg>
             <span class="text-xs">콘텐츠</span>
           </div>
-          <div class="flex flex-col items-center py-2 px-3">
+          <div class="flex flex-col items-center py-2 px-3 bg-brown-700 rounded-lg">
             <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 20 20">
               <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
             </svg>
