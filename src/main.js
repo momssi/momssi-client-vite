@@ -10,6 +10,7 @@ import { OurChurch } from './components/OurChurch.js'
 import { Verse } from './components/Verse.js'
 import { BottomNav } from './components/BottomNav.js'
 import { renderStart } from './screens/StartScreen.js'
+import { renderWord } from './screens/WordScreen.js'
 
 function renderHome() {
   return `
@@ -40,6 +41,8 @@ function render() {
     document.querySelector('#app').innerHTML = renderLogin()
   } else if (hash === '#start') {
     document.querySelector('#app').innerHTML = renderStart()
+  } else if (hash === '#word') {
+    document.querySelector('#app').innerHTML = renderWord()
   } else {
     document.querySelector('#app').innerHTML = renderHome()
   }

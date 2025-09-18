@@ -1,12 +1,10 @@
+import { TopCloseBar } from '../components/TopCloseBar.js'
+
 export function renderStart() {
   return `
   <div class="min-h-screen bg-neutral-100">
     <!-- Top bar with close -->
-    <div class="pt-4 px-4 flex items-center">
-      <a href="#home" aria-label="닫기" class="text-gray-500 text-1xl">✕</a>
-      <div class="ml-auto flex items-center space-x-2 text-gray-500">
-      </div>
-    </div>
+    ${TopCloseBar('#home')}
 
     <div class="max-w-md mx-auto px-4 py-6 flex flex-col items-center justify-center" style="min-height: 70vh;">
       <!-- Card -->
@@ -25,16 +23,12 @@ export function renderStart() {
               초원에서, 묵상 <span class="bg-gray-100 rounded px-1">1일 째</span>
             </p>
           </div>
-          <div class="p-5 text-gray-800">
-            <p class="text-sm text-left">
-            </p>
-          </div>
         </div>
       </div>
 
       <!-- Start button -->
       <div class="mt-8 flex justify-center w-full">
-        <a href="#home" class="w-full sm:w-3/4 bg-brown-700 text-white text-base font-semibold py-4 rounded-2xl text-center">시작하기</a>
+        <a href="#word" class="w-full sm:w-3/4 bg-brown-700 text-white text-base font-semibold py-4 rounded-2xl text-center">시작하기</a>
       </div>
     </div>
   </div>
