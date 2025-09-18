@@ -1,7 +1,7 @@
 import { TopCloseBar } from '../components/TopCloseBar.js'
 import { StepControls } from '../components/StepControls.js'
 
-export function renderWord() {
+export function renderFind() {
   return `
   <div class="min-h-screen bg-neutral-100">
     <!-- Top bar -->
@@ -12,7 +12,7 @@ export function renderWord() {
       <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden w-full">
         <div class="divide-y divide-gray-200 font-serif">
           <div class="p-5">
-            <h2 class="text-base sm:text-lg font-semibold text-gray-900 text-left">오늘의 말씀</h2>
+            <h2 class="text-base sm:text-lg font-semibold text-gray-900 text-left">살펴보기</h2>
           </div>
           <div class="p-5 text-gray-800">
             <p class="text-sm text-left">잠언 18:19-23 개역개정</p>
@@ -28,7 +28,7 @@ export function renderWord() {
       </div>
     </div>
 
-    ${StepControls({ prevHref: '#start', nextHref: '#find', prevLabel: '이전', nextLabel: '다음' })}
+    ${StepControls({ prevHref: '#word', nextHref: '#apply', prevLabel: '이전', nextLabel: '다음' })}
   </div>
   `
 }

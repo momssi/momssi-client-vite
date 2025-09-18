@@ -28,7 +28,7 @@ export function renderStart() {
 
       <!-- Start button -->
       <div class="mt-8 flex justify-center w-full">
-        <a href="#word" class="w-full sm:w-3/4 bg-brown-700 text-white text-base font-semibold py-4 rounded-2xl text-center">시작하기</a>
+        <a href="#word" class="w-11/12 sm:w-2/3 bg-brown-700 text-white text-sm font-medium py-3 px-4 rounded-xl text-center">시작하기</a>
       </div>
     </div>
   </div>
