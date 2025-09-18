@@ -35,7 +35,7 @@ export function Meditation() {
       </div>
       <div class="flex space-x-2 mt-4">
         <button class="flex-1 border border-brown-300 text-brown-700 py-2 px-4 rounded-lg text-sm font-medium">묵상 노트</button>
-        <button class="flex-1 bg-brown-700 text-white py-2 px-4 rounded-lg text-sm font-medium">시작하기</button>
+        <a href="#start" class="flex-1 bg-brown-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center">시작하기</a>
       </div>
     </div>
   `

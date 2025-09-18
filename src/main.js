@@ -9,6 +9,7 @@ import { BibleReading } from './components/BibleReading.js'
 import { OurChurch } from './components/OurChurch.js'
 import { Verse } from './components/Verse.js'
 import { BottomNav } from './components/BottomNav.js'
+import { renderStart } from './screens/StartScreen.js'
 
 function renderHome() {
   return `
@@ -37,6 +38,8 @@ function render() {
   const hash = window.location.hash || '#home'
   if (hash === '#login') {
     document.querySelector('#app').innerHTML = renderLogin()
+  } else if (hash === '#start') {
+    document.querySelector('#app').innerHTML = renderStart()
   } else {
     document.querySelector('#app').innerHTML = renderHome()
   }
