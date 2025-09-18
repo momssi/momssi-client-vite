@@ -8,7 +8,7 @@ export function renderLogin() {
     ${StatusBar()}
 
     <!-- Decorative top landscape -->
-    <div class="w-full h-30 bg-gradient-to-b from-[#b88952] to-[#2b1e18] mt-12">
+    <div class="w-full h-50 bg-gradient-to-b from-[#b88952] to-[#2b1e18] mt-12">
       <svg viewBox="0 0 375 100" preserveAspectRatio="none" class="w-full h-full">
         <defs>
           <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
