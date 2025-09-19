@@ -1,5 +1,4 @@
 import { TopCloseBar } from '../components/TopCloseBar.js'
-import { StepControls } from '../components/StepControls.js'
 
 export function renderApply() {
   return `
