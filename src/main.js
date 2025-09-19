@@ -4,8 +4,6 @@ import { StatusBar } from './components/StatusBar.js'
 import { Header } from './components/Header.js'
 import { QTCard } from './components/QTCard.js'
 import { Meditation } from './components/Meditation.js'
-import { Prayer } from './components/Prayer.js'
-import { BibleReading } from './components/BibleReading.js'
 import { OurChurch } from './components/OurChurch.js'
 import { Verse } from './components/Verse.js'
 import { BottomNav } from './components/BottomNav.js'
@@ -14,6 +12,7 @@ import { renderWord } from './screens/WordScreen.js'
 import { renderEnd } from './screens/EndScreen.js'
 import { renderFind } from './screens/FindScreen.js'
 import { renderApply } from './screens/ApplyScreen.js'
+import { renderChurch } from './screens/ChurchScreen.js'
 
 function renderHome() {
   return `
@@ -26,8 +25,6 @@ function renderHome() {
       <div class="px-4 py-6 space-y-4 pb-24">
         ${QTCard()}
         ${Meditation()}
-        ${Prayer()}
-        ${BibleReading()}
         ${OurChurch()}
         ${Verse()}
       </div>
@@ -52,6 +49,8 @@ function render() {
     document.querySelector('#app').innerHTML = renderFind()
   } else if (hash === '#apply') {
     document.querySelector('#app').innerHTML = renderApply()
+  } else if (hash === '#church') {
+    document.querySelector('#app').innerHTML = renderChurch()
   } else {
     document.querySelector('#app').innerHTML = renderHome()
   }

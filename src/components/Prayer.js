@@ -19,6 +19,10 @@ export function Prayer() {
           </svg>
         </div>
       </div>
+      <div class="flex space-x-2 mt-4">
+        <button class="w-28 sm:w-32 border border-brown-300 text-brown-700 py-3 px-4 rounded-xl text-sm font-medium text-center">기도 노트</button>
+        <a href="#start" class="flex-1 ml-0 bg-brown-700 text-white py-3 px-4 rounded-xl text-sm font-medium text-center">시작하기</a>
+      </div>
     </div>
   `
 } 

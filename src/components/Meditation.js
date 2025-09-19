@@ -29,13 +29,13 @@ export function Meditation() {
         </div>
         <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
           <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
           </svg>
         </div>
       </div>
       <div class="flex space-x-2 mt-4">
-        <button class="flex-1 border border-brown-300 text-brown-700 py-2 px-4 rounded-lg text-sm font-medium">묵상 노트</button>
-        <a href="#start" class="flex-1 bg-brown-700 text-white py-2 px-4 rounded-lg text-sm font-medium text-center">시작하기</a>
+        <button class="w-28 sm:w-32 border border-brown-300 text-brown-700 py-3 px-4 rounded-xl text-sm font-medium text-center">묵상 노트</button>
+        <a href="#start" class="flex-1 ml-0 bg-brown-700 text-white py-3 px-4 rounded-xl text-sm font-medium text-center">시작하기</a>
       </div>
     </div>
   `
