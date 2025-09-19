@@ -6,7 +6,7 @@ export function renderStart() {
     <!-- Top bar with close -->
     ${TopCloseBar('#home')}
 
-    <div class="max-w-md mx-auto px-4 py-6 flex flex-col items-center justify-center" style="min-height: 70vh;">
+    <div class="max-w-md lg:max-w-4xl mx-auto px-4 py-6 flex flex-col items-center justify-center" style="min-height: 70vh;">
       <!-- Card -->
       <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden w-full">
         <div class="divide-y divide-gray-200 font-serif">
@@ -27,8 +27,10 @@ export function renderStart() {
       </div>
 
       <!-- Start button -->
-      <div class="mt-8 flex justify-center w-full">
-        <a href="#word" class="w-11/12 sm:w-2/3 bg-brown-700 text-white text-sm font-medium py-3 px-4 rounded-xl text-center">시작하기</a>
+      <div class="max-w-md lg:max-w-4xl mx-auto px-0 pt-6 pb-6">
+        <div class="flex items-center justify-between">
+          <a href="#word" class="flex-1 ml-4 bg-brown-700 text-white rounded-xl py-3 px-4 text-center text-sm font-medium">시작</a>
+        </div>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@ export function renderWord() {
     <!-- Top bar -->
     ${TopCloseBar('#home')}
 
-    <div class="max-w-md mx-auto px-4 py-6 flex flex-col items-center justify-center" style="min-height: 70vh;">
+    <div class="max-w-md lg:max-w-4xl mx-auto px-4 py-6 flex flex-col items-center justify-center" style="min-height: 70vh;">
       <!-- Card -->
       <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden w-full">
         <div class="divide-y divide-gray-200 font-serif">
@@ -26,9 +26,15 @@ export function renderWord() {
           </ul>
         </div>
       </div>
-    </div>
 
-    ${StepControls({ prevHref: '#start', nextHref: '#find', prevLabel: '이전', nextLabel: '다음' })}
+      <!-- Local step controls below content (non-fixed) -->
+      <div class="max-w-md lg:max-w-4xl mx-auto px-0 pt-6 pb-6">
+        <div class="flex items-center justify-between">
+          <a href="#start" class="bg-white text-gray-600 border border-gray-200 rounded-xl px-6 py-3 text-sm font-medium">이전</a>
+          <a href="#find" class="flex-1 ml-4 bg-brown-700 text-white rounded-xl py-3 px-4 text-center text-sm font-medium">다음</a>
+        </div>
+      </div>
+    </div>
   </div>
   `
 }
