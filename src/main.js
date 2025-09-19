@@ -13,6 +13,7 @@ import { renderEnd } from './screens/EndScreen.js'
 import { renderFind } from './screens/FindScreen.js'
 import { renderApply } from './screens/ApplyScreen.js'
 import { renderChurch } from './screens/ChurchScreen.js'
+import { renderChurchForm } from './screens/ChurchFormScreen.js'
 
 function renderHome() {
   return `
@@ -51,6 +52,8 @@ function render() {
     document.querySelector('#app').innerHTML = renderApply()
   } else if (hash === '#church') {
     document.querySelector('#app').innerHTML = renderChurch()
+  } else if (hash === '#church-new') {
+    document.querySelector('#app').innerHTML = renderChurchForm()
   } else {
     document.querySelector('#app').innerHTML = renderHome()
   }

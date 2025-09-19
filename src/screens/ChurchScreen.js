@@ -31,7 +31,7 @@ export function renderChurch() {
 
       <!-- Inline action below list -->
       <div class="mt-6">
-        <a href="#church" class="block w-full bg-brown-700 text-white rounded-2xl py-4 text-center font-semibold">교회 추가 문의하기</a>
+        <a href="#church-new" class="block w-full bg-brown-700 text-white rounded-2xl py-4 text-center font-semibold">교회 추가 문의하기</a>
       </div>
     </div>
   </div>
